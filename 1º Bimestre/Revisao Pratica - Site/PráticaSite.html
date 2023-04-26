@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site - Aula AW1</title>
+</head>
+<body>
+<header id="home">
+    <h1> MEU SITE </h1>
+    <nav> 
+        <ul> 
+           <li> <a href="#home"> Home </a> </li> 
+           <li> <a href="#sobre"> Sobre </a> </li> 
+           <li> <a href="#contato"> Contato </a> </li> 
+        </ul>
+    </nav>
+</header>
+    <main>
+        <h2> Bem-Vindo ao meu Site </h2>
+        <p> Este é um exemplo básico de um site HTML </p>
+        <div>
+            <img src="https://via.placeholder.com/200x100"></img>
+            <br> <br>
+            <audio controls> <source src="audio.mp3" type="audio/mp3"> </audio>
+        </div>
+        <section id="sobre"> 
+        <h2>Produtos</h2>
+        <p>Essa é uma seção de produtos.</p>
+        <table style="border: 1px solid; ; border-collapse: collapse; width: 100%;"> 
+            <thead>
+                <tr> 
+                    <th style="border: 1px solid;"> Produto </th>
+                    <th style="border: 1px solid;"> Preço </th>
+                    <th style="border: 1px solid;"> Quantidade </th>
+                    <th style="border: 1px solid;"> Total </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr style="border: 1px solid; ">
+                    <td style="border: 1px solid; "> Camiseta </th>
+                    <td style="border: 1px solid; "> R$ 29,99 </th>
+                    <td style="border: 1px solid; "> 3 </th>
+                    <td style="border: 1px solid; "> R$89,97 </th>
+                </tr>
+            </tbody>    
+            <tbody>
+                <tr style="border: 1px solid; ">
+                    <td style="border: 1px solid; "> Calça </th>
+                    <td style="border: 1px solid; "> R$59,99 </th>
+                    <td style="border: 1px solid; "> 1 </th>
+                    <td style="border: 1px solid; "> R$59,99 </th>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3"; style="text-align: right; border: 1px solid; ">Total </td>
+                    <td style="text-align: right;"> R$349,99 </td> 
+                </tr>
+            </tfoot>    
+        </table>
+    </section>
+        <fieldset id="contato" style="margin-top: 10px;">
+            <legend> Contato </legend>
+    <form> 
+        <label for="nome"> Nome </label>
+        <input type="text" id="nome" name="nome">
+        <br><br>
+
+        <label> E-mail </label>
+        <input type="email" id="email" name="email">
+        <br><br>
+
+        <label> Mensagem</label>
+        <br>
+        <textarea> </textarea>
+        <br> <br>
+
+        <label> Aceite os termos: </label>
+        <input type="checkbox" id="check" name="check">
+
+        <br><br>
+        <button type="submit" id="btn" name="btn";> Enviar </button>
+    </form>
+        </fieldset>
+    </main>
+<footer>
+    <p> 2023 Meu Site - Criado por Erick Santos Brito </p>
+</footer>
+</body>
+</html>
