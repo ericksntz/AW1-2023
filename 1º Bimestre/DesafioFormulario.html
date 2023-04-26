@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form> 
+    <fieldset> 
+        <legend> Questionário </legend>
+
+        <fieldset>
+            <legend> Cadastro </legend>
+            <label> E-mail: </label> 
+            <input type="email" name="email" > <br> <br>
+
+            <label> Senha: </label> 
+            <input type="password" name="senha">
+        </fieldset>
+   
+        <fieldset>
+            <legend> Dados Pessoais </legend>
+
+            <label> Nome: </label> 
+            <input type="text"> <br> <br>
+
+            <label> Idade:  </label> 
+            <input type="number"> <br> <br>
+
+            <label> Telefone:  </label>  
+            <input type="text"> <br> <br>
+            
+            <label>Data de Nascimento: </label> 
+            <input type="date"> <br> <br>
+
+            <label for="genero"> Gênero: </label> 
+
+            <input type="radio" id="masculino" name="genero" value="masculino"> 
+            <label for="masculino">Masculino</label>
+
+            <input type="radio" id="feminino" name="genero" value="feminino">
+            <label for="feminino">Feminino</label>
+
+            <input type="radio" id="outros" name="genero" value="outros">
+            <label for="outros">Outros</label>
+
+            <input type="radio" id="nenhuma" name="genero" value="nenhuma">
+            <label for="nenhuma">Prefiro não responder</label> 
+
+         </fieldset>
+
+        <fieldset>
+         <legend> Preferências</legend>
+
+            <label> Selecione a Marca do seu Celular: </label>
+
+            <select name="celular" id="marca"> 
+                <option value="Apple"> Apple </option>
+                <option value="Samsung"> Samsung </option>
+                <option value="Motorola"> Motorola </option>
+                <option value="Xiaomi"> Xiaomi </option>
+                <option value="Nenhuma das Opções"> Nenhuma das Opções  </option>
+            </select> <br> <br>
+            
+            <label> Escolha o Navegador que você usa: </label> 
+
+         <input type="text" id="browser" name="browser" list="browsers"> <br> <br>
+            <datalist> 
+                <option value="Safari"></option>
+                <option value="Chrome"></option> 
+                <option value="Edge"></option> 
+                <option value="Firefox"></option> 
+            </datalist>
+
+         <label>Escolha os Estilos Musicais que você Escuta: </label>
+         
+         <input type="checkbox"> Rock
+         <input type="checkbox"> Pop
+         <input type="checkbox"> Rap
+         <input type="checkbox"> Funk
+         <input type="checkbox"> MPB
+         <input type="checkbox"> Sertanejo
+
+    </fieldset>
+
+        <fieldset>
+            <legend> Comentários </legend>
+            <textarea id="comentario" name="comentario" rows="4" cols="50" placeholder="Digite um comentário!">    </textarea>
+        </fieldset>
+        <button type="reset"> Resetar </button>
+        <button type="submit"> Enviar </button>
+
+    </fieldset>
+    
+</form>
+</body>
+</html>
