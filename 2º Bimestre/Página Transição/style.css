@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background: rgb(0,117,57);
+    background: linear-gradient(0deg, rgb(0, 119, 60) 50%, rgba(0,32,15,1) 100%);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+}   
+
+span {
+    color: #00d15e;
+}
+
+a {
+    text-decoration: none;
+    transition: 0.3s;
+    color: #fff;
+}
+
+a:hover {
+    color: #00d15e;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 8vh;
+    background-color: #005024;
+    color: #fff;
+}
+
+.nav-bar {
+    list-style: none;
+    display: flex;
+}
+
+.nav-bar li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+
+.active {
+    color: #00d15e;
+}
+
+.noticias {
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.noticia {
+    position: relative;
+}
+
+.noticias h1 {
+    font-size: 48px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 3;
+}
+.foto-noticia{
+    width: 696px;
+    height: 392px;
+    margin-top: 16px;
+    transition: 0.5s;
+    opacity: 85%;
+}
+.foto-noticia:hover{
+    opacity: 100%;
+
+}
+.legenda {
+    text-align: center;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 300;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 10px;
+    background-color: rgba(0,0,0,.4);
+    transition: 0.5s;
+}
+.legenda:hover {
+    background-color: rgba(0,0,0,.8);
+}
+
+.tabela {
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 60%;
+    margin: auto;
+    font-size: 24px;
+    color: #fff;
+}
+
+caption {
+    font-weight: bolder;
+    font-size: 32px;
+}
+
+table th, td {
+    border: 4px solid #fff;
+    text-align: center;
+}
