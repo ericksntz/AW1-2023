@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/V2/style.css">
+    <title>Página Inicial</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a class="logo">Sociedade Esportiva Palmeiras</a>  
+                <ul class="nav-bar"> 
+                <li><a href="#" class="active">Página Inicial</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#tabela">Jogos</a></li>
+                <li><a href="#formulario">Avaliações</a></li>
+                </ul>
+        </nav>
+       
+    </header>
+    <main>
+        <section class="noticias" id="noticias">
+            <h1>Ultimas Notícias</h1>
+                <p>Confira as ultimas notícias sobre o verdão</p>
+                    <div class="conteiner">
+                        <a href="https://www.uol.com.br/esporte/futebol/ultimas-noticias/2023/05/13/palmeiras-red-bull-bragantino-brasileirao.htm"> <img class="foto-noticia" src="/V2/images/palmeiras-x-bragantino-.jpg">  </a>
+                        <h4>Palmeiras x Bragantino</h4>
+                        <p>Palmeiras leva empate em golaço do Bragantino e desperdiça chance de dormir líder do Brasileiro</p> 
+                    </div>
+                </div>
+        </section>
+        <section class="tabela" id="tabela">
+            <h1>Histórico do Palmeiras em 2023</h1>
+            <table id="tabela">
+                <caption>Ultimos Jogos do <span>Verdão</span></caption>
+                    <thead>
+                        <tr>
+                            <th>Ultimos Jogos</th>
+                            <th>Placar</th>
+                            <th>Data</th>
+                            <th>Estádio</th>
+                        </tr>
+                    </thead>
+
+                <tbody>
+
+                        <tr>
+                            <td><span>Palmeiras</span> x Bragantino</td>
+                            <td>1x1</td>
+                            <td>13/05/2023</td>
+                            <td>Allianz Parque</td>
+                        </tr>
+
+
+                        <tr>
+                            <td><span>Palmeiras</span> x Grêmio</td>
+                            <td>4x1</td>
+                            <td>10/05/2023</td>
+                            <td>Allianz Parque</td>
+                        </tr>
+
+                        <tr>
+                            <td><span>Palmeiras</span> x Goias</td>
+                            <td>5x0</td>
+                            <td>07/05/2023</td>
+                            <td>Estádio Hailé Pinheiro</td>
+                        </tr>
+
+                        <tr>
+                            <td><span>Palmeiras</span> x Barcelona SC</td>
+                            <td>2x0</td>
+                            <td>03/05/2023</td>
+                            <td>Estádio Monumental Isidro Romero Carbo</td>
+                        </tr>
+
+                        <tr>
+                            <td><span>Palmeiras</span> x Corinthians</td>
+                            <td>2x1</td>
+                            <td>29/04/2023</td>
+                            <td>Allianz Parque</td>
+                        </tr>
+
+                        <tr>
+                            <td><span>Palmeiras</span> x Tombense</td>
+                            <td>1x1</td>
+                            <td>26/04/2023</td>
+                            <td>Estádio Municipal Parque do Sabiá</td>
+                        </tr>
+
+                        <tr>
+                            <td><span>Palmeiras</span> x Vasco</td>
+                            <td>2x2</td>
+                            <td>23/04/2023</td>
+                            <td>Estádio Mario Filho Maracanã</td>
+                        </tr>
+
+                        <tr>
+                            <td><span>Palmeiras</span> x Cerro Porteño</td>
+                            <td>2x1</td>
+                            <td>20/04/2023</td>
+                            <td>Estádio Morumbi</td>
+                        </tr>
+
+                        <tr>
+                            <td><span>Palmeiras</span> x Cuiabá</td>
+                            <td>2x1</td>
+                            <td>15/04/2023</td>
+                            <td>Allianz Parque</td>
+                        </tr>
+
+                        <tr>
+                            <td><span>Palmeiras</span> x Tombense</td>
+                            <td>4x2</td>
+                            <td>12/04/2023</td>
+                            <td>Allianz Parque</td>
+                        </tr>
+                </tbody>
+            </table>
+         </section>
+			<form id="formulario">
+                <h1 class="titulo-formulario"></h1>
+                    <fieldset>
+                        <legend>Deixe sua avaliação</legend>
+
+                        <label>Satisfação</label>
+                        <select name="satisfacao" class="select">
+                            <option value="">Selecione...</option>
+                            <option value="1">Muito insatisfeito</option>
+                            <option value="2">Insatisfeito</option>
+                            <option value="3">Neutro</option>
+                            <option value="4">Satisfeito</option>
+                            <option value="5">Muito satisfeito</option>
+                        </select>
+
+                        <label for="nome">Seu nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+                      
+                        <label for="email">Seu e-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+                      
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" placeholder="Digite sua mensagem" required></textarea>
+                      
+                        <button type="submit">Enviar mensagem</button>
+                      </form>
+            </fieldset>
+         </form>
+    </main>
+    <footer>
+        <p class="footer-texto">Desenvolvido por <a href="https://github.com/ericksntz" target="_blank">Erick Santos Brito</a></p>
+    </footer>
+</body>
+</html>
