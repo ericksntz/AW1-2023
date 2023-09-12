@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-bs-theme="dark">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora do Igor</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
+    <link href="bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="d-flex align-items-center py-4 bg-body-tertiary">
+    <main class="form-signin w-100 m-auto flex d-flex flex-column align-items-center">
+      <form>
+        <h1 class="h3 mb-3 fw-normal">Calculadora:</h1>
+        <div class="form-floating">
+          <input type="number" class="form-control" id="num1">
+          <label for="num1">Primeiro Número</label>
+        </div>
+        <br/>
+
+        <div class="form-floating">
+          <input type="number" class="form-control" id="num2">
+          <label for="num2">Segundo Número</label>
+        </div>
+        <br/>
+
+        <div class="form-control">
+          <label for="operacao" class="form-label">Operador</label>
+          <select class="form-select" id="operacao" placeholder="Escolha a operação">
+            <option value="Soma">Soma</option>
+            <option value="Subtração">Subtração</option>
+            <option value="Divisão">Divisão</option>
+            <option value="Multiplicação">Multiplicação</option>
+          </select>
+        </div>
+        <br/>
+
+        <button id="calcular" class="btn btn-bd-primary w-100 py-2" type="submit">Calcular</button>
+      </form>
+      <br/>
+      <h1 class="h3 mb-3 fw-normal fst-italic" id="resultado" style="display: none;"></h1>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>
