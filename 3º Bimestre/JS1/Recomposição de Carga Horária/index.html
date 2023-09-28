@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Dados do Usuário</title>
+</head>
+<body>
+    <script>
+        const body = document.body;
+
+        class Usuario {
+          constructor(nome, idade, notaPortugues, notaMatematica, notaWeb) {
+            this.nome = nome;
+            this.idade = idade;
+            this.notaPortugues = notaPortugues;
+            this.notaMatematica = notaMatematica;
+            this.notaWeb = notaWeb;
+          }
+
+          calcularMedia() {
+            const numberOfSubjects = 3;
+            return ((this.notaPortugues + this.notaMatematica + this.notaWeb) / numberOfSubjects).toFixed(2);
+          }
+
+          calcularIdade(ano) {
+            const currentYear = Number(new Date().getFullYear());
+            return (ano - currentYear) + this.idade;
+          }
+        }
+
+        let usuario = new Usuario(
+          prompt('Qual o seu nome?'),
+          Number(prompt('Qual sua idade?')),
+          Number(prompt('Qual foi sua nota em Português?')),
+          Number(prompt('Qual foi sua nota em Matemática?')),
+          Number(prompt('Qual foi sua nota em Desenvolvimento WEB?'))
+        );
+
+        let futureYear = Number(prompt('Digite um ano futuro para saber sua idade:'));
+
+        function getNumbers() {
+          let numbers;
+          do {
+            numbers = (prompt('Digite 9 números separados por um espaço " ":')).split(' ');
+            if (numbers.length != 9) {
+              alert('Digite os 9 números corretamente');
+            }
+          } while (numbers.length != 9);
+
+          let HTMLString = '';
+          numbers.forEach(num => {
+            HTMLString += `<p>${num}</p>`;
+          })
+
+          return HTMLString;
+        }
+
+        body.innerHTML = `
+        <section>
+          <header>
+            <div class="info">
+              <h2>Nome:</h2>
+              <p>${usuario.nome}</p>
+            </div>
+            <div class="info">
+              <h2>Idade:</h2>
+              <p>${usuario.idade}</p>
+            </div>
+            <div class="info">
+              <h2>Em ${futureYear} você terá:</h2>
+              <p>${usuario.calcularIdade(futureYear)} anos</p>
+            </div>
+          </header>
+
+          <main>
+            <table>
+              <tr>
+                <th>Disciplina</th>
+                <th>Nota</th>
+              </tr>
+              <tr>
+                <td>Português</td>
+                <td>${usuario.notaPortugues}</td>
+              </tr>
+              <tr>
+                <td>Matemática</td>
+                <td>${usuario.notaMatematica}</td>
+              </tr>
+              <tr>
+                <td>Desenvolvimento Web</td>
+                <td>${usuario.notaWeb}</td>
+              </tr>
+              <tr>
+                <td>Média Geral</td>
+                <td>${usuario.calcularMedia()}</td>
+              </tr>
+            </table>
+          </main>
+        </section>
+        <footer>
+          ${getNumbers()}
+        </footer>
+        `;
+
+        let userColor = prompt('Qual sua cor favorita? (em inglês):');
+
+        const colorVariableCSS = document.querySelector(':root').style;
+        colorVariableCSS.setProperty('--color', userColor);
+
+        function parseColor(colornome) {
+          const tempElem = document.createElement("div");
+          tempElem.style.color = colornome;
+          document.body.appendChild(tempElem);
+          const rgbColor = getComputedStyle(tempElem).color;
+          document.body.removeChild(tempElem);
+          return rgbColor;
+        }
+
+        function getTextColor(backgroundColor) {
+          backgroundColor = parseColor(backgroundColor);
+          const r = parseInt(backgroundColor.slice(4, 7));
+          const g = parseInt(backgroundColor.slice(9, 12));
+          const b = parseInt(backgroundColor.slice(14, 17));
+          const brightness = (r * 299 + g * 587 + b * 114) / 1000;
+          return brightness >= 128 ? "black" : "white";
+        }
+
+        const textColor = getTextColor(userColor);
+        colorVariableCSS.setProperty('--table-text-color', textColor);
+
+        const footer = document.querySelector('footer');
+
+        footer.addEventListener('click', () => {
+          if (footer.classList.contains('footer')) {
+            footer.classList.remove('footer');
+          } else {
+            footer.classList.add('footer');
+          }
+        })
+    </script>
+</body>
+</html>
