@@ -3,42 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Rostie - Cadastro</title>
+    <link rel="stylesheet" href="/Página Inicial/style.css">
+    <link rel="stylesheet" href="boxicons.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <title>Rostie - Página Inicial</title>
 </head>
 <body>
-    <div class="conteiner">
-        <div class="left-side">
-            <img src="/images/logo.png" alt="Logo" class="logo">
-            <img src="/images/female chef-cuate.svg" alt="Foto Ilustrativa de Chefe Cozinhando" class="vetor">
-        </div>
-        <div class="right-side">
-            <div class="right-top">
-            Já tem uma conta? <a href="" class="btn-login">Fazer Login</a>
+     <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="/images/logo-menro.png" alt=""></a>
             </div>
-            <h1>Bem vindo ao <span>Rostie</span></h1>
-            <h3>Realize seu Cadastro:</h3>
-            <form action="#" method="post">
-                <label for="nome">Nome:</label>
-                <input type="text" placeholder="Digite seu nome" id="nome" name="nome" required>
-    
-                <label for="email">E-mail:</label>
-                <input type="email" placeholder="Digite seu e-mail" id="email" name="email" required>
-    
-                <label for="senha">Digite sua Senha:</label>
-                <input type="password" placeholder="Digite sua senha" id="senha" name="senha" required>
-
-                <label for="senha">Confirme sua Senha:</label>
-                <input type="password" placeholder="Confirme sua senha" id="confirmasenha" name="confirmasenha" required>
-    
-                <label for="aceitar-termos">
-                    <input type="checkbox" id="aceitar-termos" name="aceitar-termos" required>
-                    Eu li e concordo com os <a href="" class="link">Termos e Condições</a> do site.
-                </label>
-    
-                <button type="submit" value="cadastrar"> ENTRAR</button>
-            </form>
+            <ul class="menu">
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="minha_despensa.html">Minha Despensa</a></li>
+                <li><a href="receitas.html">Receitas</a></li>
+                <li><a href="/Login/index.html">Login</a></li>
+                <li><a href="/Cadastro/index.html" class="cadastre-se">Cadastrar-se</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-container">
+      <div class="content"></div>
+      <div class="feature-container">
+        <div class="feature-item">
+          <div class="icon"><i class='bx bx-grid'></i></div>
+          <h3>Gestão de Despensa Inteligente</h3>
+          <p>Permitimos que os usuários criem listas virtuais de ingredientes, refletindo o que têm em casa. Com apenas alguns cliques, sua despensa ganha vida.</p>
         </div>
+        <div class="feature-item">
+          <div class="icon"><i class='bx bx-book-heart'></i></div>
+          <h3>Recomendações de Receitas Personalizadas</h3>
+          <p> Nosso site oferece receitas que podem ser preparadas com ingredientes que as pessoas já têm em casa, o que é um grande atrativo para muitos cozinheiros.</p>
+        </div>
+        <div class="feature-item">
+          <div class="icon"><i class='bx bx-book-content'></i></div>
+          <h3>Passo a Passo Intuitivo</h3>
+          <p>Nosso Passo a Passo Intuitivo é o guia perfeito para ajudar os usuários a dominar a arte da culinária e a aproveitar ao máximo suas experiências na cozinha. </p>
+        </div>
+      </div>
     </div>
+    <div class="welcome-section">
+      <div class="welcome-content"> 
+        <div class="welcome-text">
+          <p>Bem-vindo ao nosso site! Estamos empolgados por você estar aqui. Nossa missão é tornar sua experiência culinária mais fácil e inspiradora. Com a ajuda do nosso site, você pode transformar ingredientes simples em refeições incríveis.</p>
+          <p>Assista ao vídeo ao lado para descobrir como utilizar todas as funcionalidades e começar a cozinhar como um chef em sua própria cozinha.</p>
+          <button class="start-button">Comece já</button>
+        </div>
+        <div class="video-container">
+          <video width="518" height="346" controls>
+            <source src="movie.mp4" type="video/mp4">
+        </div>
+      </div>
+    </div>
+    <div class="recipes-section">
+    <h2>Receitas Populares</h2>
+    <div id="grid-container">
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+      <div class="grid-item"></div>
+  </div>
+  <button class="recipe-button">Ver mais</button>
+</div>
+<div class="footer">
+  <div class="newsletter">
+      <h3>Inscreva-se na nossa newsletter</h3>
+      Newsletter
+      <input type="text" placeholder="Seu email">
+      <button type="submit" class="newsletter-btn"><i class='bx bxs-paper-plane' style='color:#ffffff' ></i></button>
+  </div>
+</div>
+<div class="footer-complement">
+  <ul class="footer-links">
+    <li><a href="index.html">Página Inicial</a></li>
+    <li><a href="minha_despensa.html">Minha Despensa</a></li>
+    <li><a href="receitas.html">Receitas</a></li>
+    <li><a href="#">Sobre nós</a></li>
+    <li><a href="#">Contato</a></li>
+    <p>© Copyright 2023 - Rostie</p>
+  </div>
+</ul>
 </body>
 </html>
