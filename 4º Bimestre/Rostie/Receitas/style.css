@@ -62,3 +62,33 @@ header {
 .cadastre-se:hover {
   background-color: #151515;
 }
+
+#grid-container {
+  width: 80%;
+  margin: auto;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.grid-item {
+  padding: 50px;
+  background-color: #eeeeee; /* Cor de fundo para os itens do grid */
+}
+
+.grid-item:hover {
+  background-color: #303030;
+  transition-duration: .2s ;
+  cursor: pointer;
+}
+
+.recipes-section {
+  display: flex;
+  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
