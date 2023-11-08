@@ -110,7 +110,7 @@ label {
     color: #808080;
 }
 
-button {
+.btn {
     margin-bottom: 20px;
     padding: 10px;
     width: 10%;
@@ -122,7 +122,7 @@ button {
     cursor: pointer;
 }
 
-button:hover {
+.btn:hover {
     background-color: #151515;
     box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
@@ -168,28 +168,83 @@ p {
     margin-bottom: 10px;
 }
 
- /* Estilos para a grade */
- .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    width: 80%;
-    margin: 0 auto; /* Centralizar a grade na tela */
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 80%;
 }
 
-#grid-container {
-    width: 80%;
-    margin: auto;
-    height: 80vh;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 50px;
-  }
-  
-  .grid-item {
-    padding: 50px;
-    background-color: #adadad; /* Cor de fundo para os itens do grid */
+/* Estilos para os itens da grade */
+.grid-item {
+  border: 1px solid #ddd;
+  position: relative;
+  width: calc(25% - 20px); /* 33.33% do espaço com margem entre os itens */
+  margin: 10px;
+  text-align: center;
+}
+
+.foto-receita {
+  max-width: 100%;
+  padding: 40px;
+  border-radius: 45px;
+}
+
+/* Estilos para o h3 */
+.grid-item h3{
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  margin: 0;
+  font-weight: 400; /* Cor do texto do h5 */
+  text-transform: capitalize;
+}
+
+.grid-item h4{
+  color: #808080;
+}
+
+.add-btn {
+  width: 28px;
+  font-size: 20px;
+  font-weight: 500;
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  margin-bottom: 20px;
+  margin-right: 10px;
+  color: #49be25;
+}
+
+.add-btn:hover {
+  background-color: #49be25;
+  color: #fff;
+  transition: .4s;
+  cursor: pointer;
+}
+
+.rmv-btn {
+  width: 28px;
+  font-size: 20px;
+  font-weight: bold;
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  color: #980005;
+}
+
+.rmv-btn:hover {
+  background-color: #980005;
+  color: #fff;
+  transition: .4s;
+  cursor: pointer;
+}
+
+
+.grid-item:hover {
+  box-shadow: 0 0 15px rgba(33,33,33,.2);
+  transition-duration: .2s ;
+  cursor: pointer;
 }
 
 .footer {

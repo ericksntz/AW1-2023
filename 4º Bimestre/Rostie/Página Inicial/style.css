@@ -47,7 +47,9 @@ header {
 }
 
 .menu a:hover {
-  color: #151515;
+  color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  
 }
 
 .cadastre-se {
@@ -72,7 +74,7 @@ header {
   background:
   linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,6)) ,
   url(/images/mike-giovinazzo-unsplash.jpg);
-  background-position: top;
+  background-position: center;
   background-size: cover;
   height: 65vh; /* 65% da altura da tela */
   display: flex;
@@ -160,6 +162,7 @@ header {
 .icon:hover {
   transform: rotateY(360deg);
   transition: all 0.65s;
+  box-shadow: 0 0 11px rgba(33,33,33,.2);
 }
 
 .icon i {
@@ -216,22 +219,20 @@ h3, h2 {
 #grid-container {
   width: 80%;
   margin: auto;
-  height: 80vh;
+  height: 100vh;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
-}
-
-.grid-item {
-  padding: 50px;
-  background-color: #eeeeee; /* Cor de fundo para os itens do grid */
+  gap: 20px;
+  padding: 20px;
 }
 
 .grid-item:hover {
-  background-color: #303030;
+  filter: brightness(50%);
+  box-shadow: 0 0 15px rgba(33,33,33,.2);
   transition-duration: .2s ;
   cursor: pointer;
+  border-radius: 10px ;
 }
 
 .recipes-section {
@@ -240,6 +241,71 @@ h3, h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+.grid-item:nth-child(1) {
+  background-image: url('/images/macarrão.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.grid-item:nth-child(2) {
+  background-image: url('/images/yakisoba.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.grid-item:nth-child(3) {
+  background-image: url('/images/camarão-empanado.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.grid-item:nth-child(4) {
+  background-image: url('/images/hamburguer-artesanal.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.grid-item:nth-child(5) {
+  background-image: url('/images/pizza.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.grid-item:nth-child(6) {
+  background-image: url('/images/parmegiana-de-frango.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid-item:nth-child(7) {
+  background-image: url('/images/bolo-chocolate.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.grid-item:nth-child(8) {
+  background-image: url('/images/salada.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+}
+
+.grid-item:nth-child(9) {
+  background-image: url('/images/brownie.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.recipe-button > a {
+  text-decoration: none;
+  color: #000;
 }
 
 .recipe-button {
@@ -256,6 +322,11 @@ h3, h2 {
 
 .recipe-button:hover {
   background-color: #262626;
+  color: #fff;
+  transition-duration: .3s;
+}
+
+.recipe-button>a:hover {
   color: #fff;
   transition-duration: .3s;
 }

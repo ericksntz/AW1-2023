@@ -47,7 +47,9 @@ header {
 }
 
 .menu a:hover {
-  color: #151515;
+  color: #000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  
 }
 
 .cadastre-se {
@@ -63,32 +65,140 @@ header {
   background-color: #151515;
 }
 
-#grid-container {
-  width: 80%;
-  margin: auto;
-  height: 80vh;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  border: 1px solid #ddd;
 }
 
+h2{
+  margin: 20px 0 12px;
+}
+
+.grid-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 80%;
+}
+
+/* Estilos para os itens da grade */
 .grid-item {
-  padding: 50px;
-  background-color: #eeeeee; /* Cor de fundo para os itens do grid */
+  border: 1px solid #ddd;
+  position: relative;
+  width: calc(33.33% - 20px); /* 33.33% do espaço com margem entre os itens */
+  margin: 10px;
+  text-align: center;
+}
+
+.foto-receita {
+  max-width: 100%;
+  padding: 40px;
+  border-radius: 45px;
+}
+
+/* Estilos para o h5 */
+.grid-item h4{
+  position: absolute;
+  top: 10px;
+  left: 40px;
+  margin: 0;
+  font-weight: 400; /* Cor do texto do h5 */
+  text-transform: capitalize;
 }
 
 .grid-item:hover {
-  background-color: #303030;
+  box-shadow: 0 0 15px rgba(33,33,33,.2);
   transition-duration: .2s ;
   cursor: pointer;
 }
 
-.recipes-section {
+.buttons {
   display: flex;
-  height: 100vh;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
+.button {
+  cursor: pointer;
+  background-color: #303030;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  font-size: 16px;
+  margin: 10px 10px 20px;
+}
+
+.button:hover {
+  background-color: #151515;
+  transition: background-color 0.3s;
+}
+
+.footer {
+  background-color: #eeeeee;
+  padding: 40px;
+  text-align: center;
+}
+
+.newsletter {
+  margin: 0 auto;
+  width: 50%;
+}
+
+.newsletter > h3 {
+  margin-top: 0;
+}
+
+.newsletter input[type="text"] {
+  padding: 25px 80px 25px 15px;
+  margin: 5px 10px;
+  border-radius: 50px;
+  border: none;
+  font-size: 16px;
+}
+
+.newsletter-btn {
+  background-color: #262626;
+  border: none;
+  font-size: 20px;
+  padding: 12px;
+  border-radius: 50px;
+  position: relative;
+  left: -70px;
+  cursor: pointer;
+  max-width: 48px;
+}
+
+.newsletter-btn:hover {
+  background-color: #151515;
+}
+
+.footer-links {
+  list-style: none; /* Remover marcadores de lista */
+  padding: 0;
+}
+
+.footer-links li {
+  display: inline; /* Exibir os itens do footer-links na mesma linha */
+}
+
+.footer-links a {
+  color: #303030; /* Cor do texto dos links do footer-links */
+  font-weight: 500;
+  text-decoration: none; /* Remover sublinhado dos links do footer-links */
+  margin: 20px;
+}
+
+.footer-links a:hover {
+  color: #151515;
+}
+
+.footer-complement {
+  background-color: #f3f3f3;
+  padding: 100px;
+  text-align: center;
+}
+
+.footer-complement p {
+  color: #303030;
+}
