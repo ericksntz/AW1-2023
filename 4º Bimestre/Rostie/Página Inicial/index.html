@@ -4,12 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/Página Inicial/style.css">
-    <link rel="stylesheet" href="boxicons.min.css">
     <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
     <title>Rostie - Página Inicial</title>
 </head>
 <body>
-     <header>
+    <header>
         <nav>
             <div class="logo">
                 <a href="/Página Inicial/index.html"><img src="/images/logo-menro.png" alt=""></a>
@@ -47,14 +46,15 @@
       </div>
     </div>
     <div class="welcome-section">
-      <div class="welcome-content"> 
+      <div class="welcome-content">
         <div class="welcome-text">
-          <p>Bem-vindo ao nosso site! Estamos empolgados por você estar aqui. Nossa missão é tornar sua experiência culinária mais fácil e inspiradora. Com a ajuda do nosso site, você pode transformar ingredientes simples em refeições incríveis.</p>
+          <span>Bem-vindo ao nosso site!</span>
+          <p>Estamos empolgados por você estar aqui. Nossa missão é tornar sua experiência culinária mais fácil e inspiradora. Com a ajuda do nosso site, você pode transformar ingredientes simples em refeições incríveis.</p>
           <p>Assista ao vídeo ao lado para descobrir como utilizar todas as funcionalidades e começar a cozinhar como um chef em sua própria cozinha.</p>
           <button class="start-button">Comece já</button>
         </div>
         <div class="video-container">
-          <video width="518" height="346" controls>
+          <video style="min-width:50%; min-height:100%; width:636px; height:auto;"  controls>
             <source src="movie.mp4" type="video/mp4">
         </div>
       </div>
@@ -78,7 +78,7 @@
   <div class="newsletter">
       <h3>Inscreva-se na nossa newsletter</h3>
       Newsletter
-      <input type="text" placeholder="Seu email">
+      <input type="text" placeholder="Seu email" id="newsletter-input">
       <button type="submit" class="newsletter-btn"><i class='bx bxs-paper-plane' style='color:#ffffff' ></i></button>
   </div>
 </div>
